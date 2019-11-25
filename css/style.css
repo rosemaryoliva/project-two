@@ -35,16 +35,8 @@
 	font-size: 15px;
 }
 
-.main_nav li.active a {
-	border: 1px solid white;
-}
-
-.main_nav li a:hover {
-
-	border: 1px solid white; 
-}
-
 .logo img{
+	display: block;
 	width: 150px;
 	height: auto;
 	float: left;
@@ -62,9 +54,8 @@ body{
 }
 
 .hero{
-	position: absolute;
 	width: 1200px;
-	margin: 120px auto;
+	margin: 100px, auto;
 }
 
 h1 {
@@ -72,11 +63,11 @@ h1 {
 	text-transform: uppercase;
 	font-size: 70px;
 	text-align: center;
-	margin-top: 275px;
+	margin-top: 120px;
 
 }
 
-.button {
+.home-button {
 	font-family: 'Arvo', serif; 
 	margin-top: 30px;
 	margin-left:440px;
@@ -99,6 +90,79 @@ h1 {
 .btn-two:hover {
 	background-color: darkorange;
 }
+/*------------------------------------------------------------------*/
+/* This just resets the styles of our unordered list that makes our hamburger/hotdog icon */
+@media (min-width: 480px) {
+/* This just resets the styles of our unordered list that makes our hamburger/hotdog icon */
+
+.navigation {
+	display: none;
+}
+.logo{
+	display: none;
+}
+.mobile-main-nav ul{
+  list-style: none;
+  padding: 0;
+}
+
+/* Styles for the menu button */
+.mobile-menu-btn {
+  background-color: #FFB018;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .16);
+  cursor: pointer;
+  height: 56px;
+  left: 24px;
+  position: fixed;
+  top: 24px;
+  width: 56px;
+}
+
+/* Styles for the menu */
+.mobile-menu {
+  bottom: 0;
+  background-color: #ffffff;
+  left: 0;
+  margin: 0;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  width: 288px;  
+  transform: translate3d(-100%, 0, 0);
+  transition: transform .2s linear;
+}
+.mobile-main-off {
+	display: none;
+}
+.mobile-main--open {
+	display: block;
+}
+
+/* Creating the hamburger/hotdog icon in CSS */
+.mobile-menu-btn li {
+  padding-top:70px;
+  text-decoration: none;
+  font-family: 'Alata', sans-serif;
+  margin: auto;
+  transition: all .3s ease-in-out;
+}
+
+/* The following two lines set the three lines of our hamburger/hotdog icon apart */
+.mobile-menu-btn li:first-child {
+  transform: translate3d(0, -4px, 0);
+}
+
+.mobile-menu-btn li:last-child {
+  transform: translate3d(0, 4px, 0);
+}
+
+/* We're now in the animation territory. These are the classes you toggle on with our Javascript function. */
+
+
+.mobile-menu--open {
+  transform: translate3d(0, 0, 0);
+}}
 
 /*---------------------------------------------------------------------*/
 /* Enter your Styles below! */
@@ -167,20 +231,21 @@ li {
   padding: 20px;
 }
 
-nav {
+nav.dekstop-menu {
+	display: none;
   overflow: hidden;
 }
 
-nav ul {
+nav.dekstop-menu ul {
   float: right;
 }
 
-nav li {
+nav.dekstop-menu li {
   display: inline;
   float: right;
 }
 
-nav a {
+nav.dekstop-menu a {
   display: inline;
   color: #fff;
   text-decoration: none;
@@ -188,12 +253,12 @@ nav a {
   transition: 0.3s all;
 }
 
-nav a:hover {
+nav.dekstop-menu a:hover {
   background: #FFB018;
   padding: 20px;
 }
 
-.logo-nav img {
+.dekstop-menu .logo-nav img {
   float: left;
   transition: 0.7s all;
   width: 75px;
@@ -203,7 +268,7 @@ nav a:hover {
 
 
 
-nav ul ul.dropdown-content li{
+nav.dekstop-menu ul ul.dropdown-content li{
 	display: block;
 	float: none;
 	background:  #FFB018;
@@ -220,7 +285,7 @@ section .inner {
   padding-top: 40px;
 }
 
-nav ul.dropdown-content {
+nav.dekstop-menu ul.dropdown-content {
 	display: none;
 	position: absolute;
 	min-width: 160px;
@@ -233,15 +298,16 @@ nav ul.dropdown-content {
 
 
 
-.drop-down:hover .dropdown-content{
+.dekstop-menu .drop-down:hover .dropdown-content{
 	display:block;
 
 }
-nav .drop-down:hover ul.dropdown-content li{
+nav.dekstop-menu .drop-down:hover ul.dropdown-content li{
 	display:block;
 	padding: -20px;
 	
 }
+
 
 /*-------------------------------------------------------------*/
 
@@ -442,7 +508,7 @@ ul {
 }
 
 img {
-	max-width: 80%;
+	max-width: 100%;
 	height: auto;
 	margin-bottom: 5px;
 }
@@ -489,6 +555,18 @@ img {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	background-color: #fff;
+}
+
+@media screen and (min-width: 480px) {
+	.logo{
+		visibility: none;
+	}
+	img{
+		height: 20;
+		width: 100%;
+
+	}
+
 }
 
 @media (max-width: 1023px) {
@@ -592,6 +670,12 @@ img {
 }
 
 @media (min-width: 1024px) {
+	.mobile-menu-btn {
+		display:none;
+	}
+	nav.dekstop-menu {
+		display: block;
+	}
 	.menu-sides {
 		border-top: 5px solid var(--primary-1);
 		border-left: 5px solid var(--primary-1);
