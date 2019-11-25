@@ -9,6 +9,14 @@
 	padding: 0;
 }
 
+.home{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/pizza.png'); 
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-color: black;
+}
+
 
 .main_nav {
 	float:right;
@@ -26,6 +34,7 @@
 	font-family: 'Alata', sans-serif;
 	font-size: 15px;
 }
+
 .main_nav li.active a {
 	border: 1px solid white;
 }
@@ -41,12 +50,6 @@
 	float: left;
 	padding: 20px;
 }
-.home{
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/pizza.png); 
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
-}
 
 body{
 	font-family: 'Alata', sans-serif;
@@ -61,7 +64,7 @@ body{
 .hero{
 	position: absolute;
 	width: 1200px;
-	margin: auto;
+	margin: 120px auto;
 }
 
 h1 {
@@ -97,60 +100,198 @@ h1 {
 	background-color: darkorange;
 }
 
-
+/*---------------------------------------------------------------------*/
 /* Enter your Styles below! */
+
 .dining-room {
 	background-image: url(../images/dining_room.png); 
+	height: 100%;
 }
+
+
 * {box-sizing: border-box;}
 
- form{
- 	max-width: 300px; 
- 	margin: 10px auto;
- 	padding: 40px 20px;
- 	background: #f4f7f8;
- 	border-radius: 8px;
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
 
- }
+::selection {
+  background: darkorange;
+  color: #aaf;
+}
+.alternate ::selection {
+  background: darkorange;
+  color: #000;
+}
 
- .reserve{
- 	margin: 0 0 30px 0;
- 	text-align: center;
- 	color: black;
- }
+ul, li,{
+  font-size: 80px;
+  margin: 0;
+  padding: 0;
+}
 
- input[type="text"],
- input[type="email"],
- textarea,
- select {
- 	background: regba(255,255,255,0.1);
- 	border-style: none;
- 	font-size: 16px;
- 	margin: 0;
- 	outline: 0;
- 	padding: 15px;
- 	width: 100%;
- 	background-color: #e8eeef; 
- 	color:#8a97a0;
- 	box-shadow: 0 1px 0 rgb(0,0,0,0.3) inset;
- 	margin-bottom:30px ;
- }
+.inner {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
 
- input:focus, textarea:focus{
- 	box-shadow: 0 0 5px rgb(255,215,0);
- 	border: 1px solid rgb(255,215,0)
- }
+header {
+  width: 100%;
+  padding: 35px;
+  background: darkorange;
+  transition: 0.7s all;
+  z-index: 100;
+}
 
- input[type="radio"],
- input[type="checkbox"]{
- 	margin: 0 4px 8px 0;
- }
+header.alt-header {
+  background: darkorange;
+}
 
- select{
- 	padding: 6px;
- 	height: 32px;
- 	border-radius: 2px; 
- }
+.alt-header a {
+  color: #000;
+}
+
+body.header-fixed header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+li {
+  list-style: none;
+  padding: 20px;
+}
+
+nav {
+  overflow: hidden;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  display: inline;
+  float: right;
+}
+
+nav a {
+  display: inline;
+  color: #fff;
+  text-decoration: none;
+  padding: 25px;
+  transition: 0.3s all;
+}
+
+nav a:hover {
+  background: #FFB018;
+  padding: 20px;
+}
+
+.logo-nav img {
+  float: left;
+  transition: 0.7s all;
+  width: 75px;
+  margin-top: -15px;
+
+}
+
+
+
+nav ul ul.dropdown-content li{
+	display: block;
+	float: none;
+	background:  #FFB018;
+	border: 1px solid white;
+	padding: 20px;
+
+}
+
+.alternate {
+  background: darkorange;
+  }
+
+section .inner {
+  padding-top: 40px;
+}
+
+nav ul.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rdga(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+	margin-left: -65px;
+
+}
+
+
+
+.drop-down:hover .dropdown-content{
+	display:block;
+
+}
+nav .drop-down:hover ul.dropdown-content li{
+	display:block;
+	padding: -20px;
+	
+}
+
+/*-------------------------------------------------------------*/
+
+form { 
+	max-width: 300px; 
+	margin: 10px auto;
+	padding: 40px 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+
+}
+
+.reserve{
+	margin: 0 0 30px 0;
+	text-align: center;
+	color: black;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+	background: regba(255,255,255,0.1);
+	border-style: none;
+	font-size: 16px;
+	margin: 0;
+	outline: 0;
+	padding: 15px;
+	width: 100%;
+	background-color: #e8eeef; 
+	color:#8a97a0;
+	box-shadow: 0 1px 0 rgb(0,0,0,0.3) inset;
+	margin-bottom:30px ;
+}
+
+input:focus, textarea:focus{
+	box-shadow: 0 0 5px rgb(255,215,0);
+	border: 1px solid rgb(255,215,0)
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+	margin: 0 4px 8px 0;
+}
+
+select{
+	padding: 6px;
+	height: 32px;
+	border-radius: 2px; 
+}
 
 fieldset{
 	font-family: 'Arvo', serif; 
@@ -211,6 +352,374 @@ label .light {
 	}
 }
 
+/*-----------------------------------------------------------------------------*/
+
+:root {
+	--primary-1: darkorange;
+  --primary-2: #FF8C00;
+}
+
+/**,
+*:before,
+*:after {
+	box-sizing: inherit;*/
+}
+
+html {
+	height: 100%;
+	box-sizing: border-box; 
+}
+
+body {
+	line-height: 1.3;
+	color: #252525;
+}
+
+
+.lunch-menu-items,
+.lunch-menu-items3,
+.lunch-menu-items4, {
+	margin-top: 0;
+	margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.lunch-menu-items {
+	font-size: 38px;
+	letter-spacing: 1px;
+	color: var(--primary-1);
+	text-transform: uppercase;
+}
+
+.lunch-menu-items3 {
+	display: inline-block;
+	padding: 10px;
+	font-weight: 700;
+	color: var(--primary-1);
+	background-color: #fff;
+}
+
+.lunch-menu-items4 {
+	margin-bottom: 5px;
+  font-size: 14px;
+	font-weight: 600;
+}
+
+p{
+	margin-top: 0;
+	font-size: 14px;
+	font-family: 'Arvo', serif; 
+
+}
+
+strong {
+	font-weight: 600;
+}
+
+span {
+	font-size: 9px;
+	line-height: 1;
+}
+
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.caviar {
+	width: 100%;
+	padding: 10px 15px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	border: 0;
+	background-color: var(--primary-1);
+	appearance: none;
+}
+
+img {
+	max-width: 80%;
+	height: auto;
+	margin-bottom: 5px;
+}
+
+.text-primary-1 {
+	color: var(--primary-1);
+}
+
+.text-primary-2 {
+  color: var(--primary-2);
+}
+
+.text-primary-3 {
+  color: var(--primary-3);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.block {
+	display: block;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+
+
+.menu-options {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: 
+		"kids featured"
+		"sweets featured"
+		"beverages featured"
+		"catering featured"
+		"allergies featured"
+		"favorites share"
+		"favorites salads-soups-burgers"
+		"special combos"
+		"special sides";
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #fff;
+}
+
+@media (max-width: 1023px) {
+  .menu-options {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, fit-content(300px));
+    grid-template-areas:	"kids" "featured" "sweets" "beverages" "catering" "allergies" "favorites" "salads-soups-burgers" "share" "special" "combos" "sides";
+  }
+}
+
+.menu-option {
+	padding: 10px 20px;
+}
+
+.menu-option h2 {
+	grid-column: 1 / -1;
+	text-align: center;
+}
+
+.menu-price {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.menu-kids {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 15px;
+	grid-area: kids;
+}
+
+.menu-kids p:first-of-type {
+	grid-column: 1 / -1;
+}
+
+.menu-featured {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-end;
+	grid-area: featured;
+	grid-row: 1 / 6;
+	padding-right: 0;
+	height: 150vh;
+	background-image: url("../images/lunch.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (max-width: 1023px) {
+  .menu-featured {
+    grid-row: auto;
+    min-height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+	.menu-featured {
+		margin-top: -30px;
+	}
+}
+
+.menu-sweets {
+	grid-area: sweets;
+}
+
+.menu-beverages {
+	grid-area: beverages;
+}
+
+.menu-catering {
+  grid-area: catering;
+}
+
+.menu-allergies {
+  grid-area: allergies;
+}
+
+.menu-favorites {
+	grid-area: favorites;
+}
+
+.menu-share {
+	grid-area: share;
+}
+
+.menu-salads-soups-burgers {
+	grid-area: salads-soups-burgers;
+}
+
+.menu-special {
+	grid-area: special;
+}
+
+.menu-combos {
+	grid-area: combos;
+}
+
+.menu-sides {
+	grid-area: sides;
+}
+
+@media (min-width: 1024px) {
+	.menu-sides {
+		border-top: 5px solid var(--primary-1);
+		border-left: 5px solid var(--primary-1);
+		border-bottom: 5px solid var(--primary-1);
+	}
+}
+
+@media (max-width: 1023px) {
+	.menu-sweets .sub,
+	.menu-special .sub {
+		margin-left: -20px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.menu-sweets .sub,
+	.menu-special .sub {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "sub-featured sub-options";
+	}
+}
+
+@media (min-width: 1024px) {
+	.menu-sweets .sub-featured,
+	.menu-special .sub-featured {
+		grid-area: sub-featured;
+		margin-left: -20px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-top: 5px solid var(--primary-1);
+		border-bottom: 5px solid var(--primary-1);
+	}
+
+	.menu-sweets .sub-featured {
+		background-image: url(../images/house-salad.png);
+	}
+	
+	.menu-special .sub-featured {
+		background-image: url("https://ernestoarellano.dev/the-real-nashville-hot-combo.jpg");
+	}
+}
+
+.menu-sweets .sub-options,
+.menu-special .sub-options {
+	grid-area: sub-options;
+	padding: 15px;
+	border-top: 5px solid var(--primary-1);
+	border-bottom: 5px solid var(--primary-1);
+	border-right: 5px solid var(--primary-1);
+}
+
+.menu-beverages .sub-options,
+.menu-favorites .sub-options,
+.menu-share .sub-options {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 15px;
+}
+
+@media (min-width: 1024px) {
+	.menu-allergies .sub-options {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 15px;
+	}
+
+	.menu-combos .sub-options,
+	.menu-sides .sub-options {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 15px;
+	}
+
+	.menu-sides .sub-options {
+		grid-gap: 5px;
+	}
+
+	.menu-salads-soups-burgers .sub {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 15px;
+	}
+}
+
+.menu-salads-soups-burgers .sub-options:first-child {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 15px;
+	padding-top: 15px;
+}
+
+.menu-salads-soups-burgers .sub-options:last-child {
+	margin-right: -20px;
+	padding: 15px;
+	border-top: 5px solid var(--primary-1);
+	border-bottom: 5px solid var(--primary-1);
+	border-left: 5px solid var(--primary-1);
+}
+
+.menu-featured .menu-option-content {
+	align-self: flex-end;
+	max-width: 83.3333333333%;
+	margin-bottom: 30px;
+	padding: 15px;
+	color: #fff;
+	background-color: var(--primary-1);
+}
+
+@media (min-width: 1024px) {
+	.menu-featured.is-sticky .menu-option-content {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		max-width: 583px;
+	}
+}
+
+.menu-featured .menu-option-content h3 {
+	margin-left: -60px;
+}
+
+.menu-featured .menu-option-content p {
+	margin-bottom: 0;
+	font-size: 16px;
+}
 
 
 

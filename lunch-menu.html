@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Rerserve Now</title>
+	<title>Lunch Menu</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -11,92 +11,145 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
 </head>
 
-<header class="reserve-page">
-	<!-- header, h1, logo etc content -->
-	<div class="row">
-
-		<ul class= "main_nav">
-			<li class=active><a href="#">Home</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Lunch</a></li>
-			<li><a href="#">Dinner</a></li>
-			<li><a href="reserve_now.html">Reserve</a></li>
-		</ul>
-	</div>
-
-</header>
-<body class="dining-room">
-	<div class="logo">
+<header class="reserve-nav" id="topnav">
+  <div class="inner">
+    <div class="logo-nav">
 		<img src="images/pizza_icon.png">
 	</div>
-	<form action="" method="POST">
-		<h1 class="reserve">Reserve</h1>
+    <nav role='navigation'>
+      <ul>
+        <li><a href="#">Reserve Now</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li class="drop-down"><a href="#">Menu</a>
+        <ul class="dropdown-content">
+        	<li><a href="#">Lunch Menu</a></li>
+        	<li><a href="#">Dinner Menu</a></li>
+        	<li><a href="#">Drink Menu</a></li>
+        </li></ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>  
+  </div>
+</header>
 
-		<fieldset><link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+<body class= "lunch-menu">
+<div class="menu-options">
+  <div class="menu-option menu-kids">
+    <h2 class="lunch-menu-items">Lunch Menu</h2>
+    <p><span>Saturday & Sundays 11:30am - 2:30pm Lunch   
+    	<br>11ish" & 18" pies served.</span></p>
+    <div class="option">
+      <h4 class="lunch-menu-items4"><link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">Plain Pie</h4>
+      <p>Tomato sauce, mozzarella (whole milk & fresh), grana padano & extra-virgin olive oil.<span class="menu-price">5<sup>50</sup></span></p>
+    </div>
+    <div class="option">
+      <h4 class="lunch-menu-items4"><link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">Apizza Margherita</h4>
+      <p>Fresh garlic & basil after bake<span class="menu-price">5<sup>50</sup></span></p>
+    </div>
+    <div class="option">
+      <h4 class="lunch-menu-items4"><link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">Lil’ Buddha Bowl</h4>
+      <p>Teriyaki sweet potatoes, avocado, fresh pineapple, roasted corn, and cilantro jasmine rice. Comes with a side
+        of seasoned fries. <span class="menu-price">5<sup>50</sup></span></p>
+    </div>
+  </div>
+  <div class="menu-option menu-featured is-sticky">
+    <div class="menu-option-content">
+      <h3 class="lunch-menu-items3"><link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">Psst, did you know?</h3>
+      <p><strong>Native Food delivers! Download our mobile app to earn rewards, receive special offers, and order your
+          food for
+          pick-up or delivery!</strong></p>
+    </div>
+  </div>
 
-			<legend><span class="section">1</span>Your Basic Info</legend>
+  <div class="menu-option menu-catering">
+    <h2 class="text-primary-2">Catering</h2>
+    <h4>Plant-Based Food Everyone Will Love</h4>
+    <p>Planning a business lunch, social event, or private party? Let us handle the food! Native Foods will provide the
+      perfect plant-based menu tailored to your party size and budget. Simply talk to a team member or visit
+      nativefoods.com for more information!</p>
+  </div>
+  
+  <div class="menu-option menu-sweets">
+    <div class="sub">
+      <div class="sub-featured"></div>
+      <div class="sub-options">
+        <h2 class="text-primary-2">Salads</h2>
+        <div class="option">
+          <h4 class="lunch-menu-items4">Caesar Salad</h4>
+          <p>Whole leaf romaine, parmigiano-reggiano, house made croutons, tossed in our house Caesar dressing *
+*(made daily with raw, un-pasteurized eggs)*
+            <span class="menu-price">4<sup>50</sup></span></p>
+        </div>
+        <br>
+        <div class="option">
+          <h4 class="lunch-menu-items4">House Salad</h4>
+          <p>Wild mixed greens, mushrooms, red onion, black olives, carrots, sliced radish & grana padano tossed in our red wine vinaigrette.
+            <span class="menu-price">4<sup>50</sup></span></p>
+        </div>
+    </div>
+  </div>
+  <div class="menu-option menu-beverages">
+    <h2 class="lunch-menu-items">Crafted Beverages</h2>
+    <div class="sub-options">
+      <div class="option">
+        <h4 class="lunch-menu-items4">House-Made Beverages</h4>
+        <ul>
+          <li>Lavender Lemonade</li>
+          <li>Watermelon Fresca</li>
+          <li>Assorted Organic, Sugar-Free Iced Teas</li>
+        </ul>
+        <span>(selection may vary by location)</span>
+      </div>
+      <div class="option">
+        <h4 class="lunch-menu-items4">Other Beverages</h4>
+        <ul>
+          <li>Assorted Locally Crafted Kombucha</li>
+          <li>Assorted Locally Crafted Beers</li>
+          <li>White and Red Wine</li>
+        </ul>
+        <span>An assortment of other specialty beverages available at select locations.</span>
+      </div>
+    </div>
+  </div>
 
-			<label class="" for = "name"> Name: </label>
-			<input type="text" name="name" value="">
+  <div class="menu-option menu-allergies">
+    <h2 class="text-primary-3">Good to Know</h2>
+    <div class="sub-options">
+      <div class="option">
+        <h4 class="lunch-menu-items4">Ingredients</h4>
+        <p>Our food is homemade with ingredients often bought locally, or brought in from sustainable suppliers using
+          only plant-based ingredients. We do not use any animal products of any kind (including honey). We use organic
+          ingredients whenever possible.</p>
+      </div>
+      <div class="option">
+        <h4 class="lunch-menu-items4">Plant-Based Proteins</h4>
+        <p>Our famous <strong>burger patty</strong> and made-<strong>with-plants chicken</strong> are crafted using our
+          own signature recipe, and made with non-GMO plant-based ingredients. Our <strong>tempeh</strong> is created
+          from cultured non-GMO soybeans. Our <strong>cheeses</strong> are made from nuts, nutritional yeast, or Follow
+          Your Heart® cheese.</p>
+      </div>
+      <div class="option">
+        <h4 class="lunch-menu-items4">Allergens</h4>
+        <p>Native Foods uses nuts, wheat, and soy in our kitchens. Not all ingredients are listed on the menu. Please
+          speak with a team member if you have a specific food aversion. All of our ingredients may share common cooking
+          equipment, utensils, or frying oils. A full list of allergens and ingredients is available upon request.</p>
+      </div>
+      <div class="option">
+        <h4 class="lunch-menu-items4">Gluten & Nut-Free Ingredients</h4>
+        <p>Look for the symbol for items made with gluten-free ingredients, and the symbol for items made with nut-free
+          ingredients. Items marked as nut-free do not contain cashews, almonds, or peanuts, but may contain coconut.
+          Native Foods does not have a dedicated gluten- or nut-free kitchen or fryer. All ingredients may share common
+          cooking equipment, utensils, or frying oils.</p>
+      </div>
+    </div>
+  </div>
+  
 
-			<label class="" for = "name"> Email: </label>
-			<input type="email" name="email" value="">
-
-			<label>Age:</label>
-			<input type="radio" name="age" value="over21">
-			<label class="light" for="over21">Party Over 21?</label>
-
-
-			<input type="radio" name="age" value="under21">
-			<label class="light" for="under21">Party Under 21?</label>
-
-		</fieldset>
-
-		<fieldset>
-			<legend><span class="section">2</span>Your Party</legend>
-			
-			<label for="party_size">Party Size:</label>
-			<select class="party_size">
-				<option value="3">>3</option>
-				<option value="3-5">3-5</option>
-				<option value="9-9">6-9</option>
-				<option value="10+">10+</option>
-			</select>
-		</fieldset>
-
-		<fieldset>
-			<legend><span class="section">3</span>What Time?</legend>
-			
-			<label for="time">Time:</label>
-			<select class="time">
-				<option value="3">5:00pm</option>
-				<option value="3-5">5:30pm</option>
-				<option value="3">6:00pm</option>
-				<option value="3-5">6:30pm</option>
-				<option value="3">7:00pm</option>
-				<option value="3-5">7:30pm</option>
-				<option value="3">8:00pm</option>
-				<option value="3-5">8:30pm</option>
-			</select>
-		</fieldset>
-
-		<button class="btn-reserve" type="submit">Reserve Now!</button>
-
-	</form>
-	<header>
-		
-		
-		
-	</header>
-
-	<!-- link for jquery -->
-	<script
-	src="https://code.jquery.com/jquery-3.4.1.min.js"
-	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	crossorigin="anonymous"></script>
-	<!-- link for your script file -->
-	<script src="scripts/script.js"></script>
 </body>
+
 </html>
