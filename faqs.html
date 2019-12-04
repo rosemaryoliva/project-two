@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Rerserve Now</title>
+	<title>FAQ's</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -13,90 +13,76 @@
 	<link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
 </head>
 
-<header class="reserve-page">
-	<!-- header, h1, logo etc content -->
-	<div class="row">
+<menu class="mobile-menu"></menu>
+      <!-- This is your menu button -->
+      <!-- It's loaded in the HTML after the menu -->
+      <nav class="mobile-menu-btn">
+        <ul class= "mobile-main-nav mobile-main-off">
+          <li class="#"><a href="#">Home</a></li>
+          <li class="#"><a href="#">About Us</a></li>
+          <li><a href="lunch-menu.html">Lunch</a></li>
+          <li><a href="#">Dinner</a></li>
+          <li><a href="reserve_now.html">Reserve</a></li>
+        </ul>
+      </nav>
 
-		<ul class= "main_nav">
-			<li class=active><a href="#">Home</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Lunch</a></li>
-			<li><a href="#">Dinner</a></li>
-			<li><a href="reserve_now.html">Reserve</a></li>
-		</ul>
+<header class="reserve-nav" id="topnav">
+
+  <div class="inner">
+    <div class="logo-nav">
+		<img class="logo" src="images/pizza_icon.png">
 	</div>
-
+    <nav class="dekstop-menu" role='navigation'>
+      <ul>
+        <li><a href="reserve_now.html">Reserve Now</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li class="drop-down"><a href="#">Menu</a>
+        <ul class="dropdown-content">
+        	<li><a href="lunch-menu.html">Lunch Menu</a></li>
+        	<li><a href="#">Dinner Menu</a></li>
+        	<li><a href="#">Drink Menu</a></li>
+        </li></ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>  
+  </div>
 </header>
-<body class="dining-room">
-	<div class="logo">
-		<img src="images/pizza_icon.png">
-	</div>
-	<form action="" method="POST">
-		<h1 class="reserve">Reserve</h1>
 
-		<fieldset><link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+<body class="faq-body">
+<div id="faq">
+  <h1>FAQ</h1>
+  <ul>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Hvordan..?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae debitis iusto voluptatum doloribus rem, qui nesciunt labore tempore fugit iste deserunt incidunt error provident repudiandae laudantium quo ipsa unde perspiciatis, nihil autem distinctio! Deserunt, aspernatur.</p>
+    </li>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Hvorfor..?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi, quia provident facere recusandae itaque assumenda fuga veniam dicta earum dolorem architecto facilis nisi pariatur.</p>
+    </li>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Hvad..?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quas placeat assumenda mollitia magni consequatur dolorum, quod nihil distinctio aperiam officia alias! Voluptate dolore ex officiis sit, magnam non a, eligendi pariatur aut, earum dolores tenetur ipsam id illo deleniti. Laudantium deserunt eaque ipsam voluptatum consequuntur voluptatibus sed minima ad accusamus debitis eos similique laboriosam, molestiae? Consequatur neque tempore quis. Eligendi, in ut aspernatur esse nesciunt libero.</p>
+    </li>
+  </ul>
+</div>
 
-			<legend><span class="section">1</span>Your Basic Info</legend>
 
-			<label class="" for = "name"> Name: </label>
-			<input type="text" name="name" value="">
-
-			<label class="" for = "name"> Email: </label>
-			<input type="email" name="email" value="">
-
-			<label>Age:</label>
-			<input type="radio" name="age" value="over21">
-			<label class="light" for="over21">Party Over 21?</label>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <!-- link for your script file -->
+ <script src="scripts/script.js"></script>
 
 
-			<input type="radio" name="age" value="under21">
-			<label class="light" for="under21">Party Under 21?</label>
-
-		</fieldset>
-
-		<fieldset>
-			<legend><span class="section">2</span>Your Party</legend>
-			
-			<label for="party_size">Party Size:</label>
-			<select class="party_size">
-				<option value="3">>3</option>
-				<option value="3-5">3-5</option>
-				<option value="9-9">6-9</option>
-				<option value="10+">10+</option>
-			</select>
-		</fieldset>
-
-		<fieldset>
-			<legend><span class="section">3</span>What Time?</legend>
-			
-			<label for="time">Time:</label>
-			<select class="time">
-				<option value="3">5:00pm</option>
-				<option value="3-5">5:30pm</option>
-				<option value="3">6:00pm</option>
-				<option value="3-5">6:30pm</option>
-				<option value="3">7:00pm</option>
-				<option value="3-5">7:30pm</option>
-				<option value="3">8:00pm</option>
-				<option value="3-5">8:30pm</option>
-			</select>
-		</fieldset>
-
-		<button class="btn-reserve" type="submit">Reserve Now!</button>
-
-	</form>
-	<header>
-		
-		
-		
-	</header>
-
-	<!-- link for jquery -->
-	<script
-	src="https://code.jquery.com/jquery-3.4.1.min.js"
-	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	crossorigin="anonymous"></script>
-	<!-- link for your script file -->
-	<script src="scripts/script.js"></script>
 </body>
 </html>
