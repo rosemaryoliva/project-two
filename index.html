@@ -5,43 +5,46 @@
 	<title>Home</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/pizza_icon.png">
 	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
 </head>
-<body>
 	<!-- These semantic tags we
 		e added to help you get started but you are very welcome to delete any of them and do your own thing -->
 		<header class="home">
 			<div>
 				<menu class="mobile-menu"></menu>
 
-			<!-- This is your menu button -->
-			<!-- It's loaded in the HTML after the menu -->
-			<nav class="mobile-menu-btn">
-				<ul class= "mobile-main-nav mobile-main-off">
-					<li class="#"><a href="#">Home</a></li>
-					<li class="#"><a href="#">About Us</a></li>
-					<li><a href="lunch-menu.html">Lunch</a></li>
-					<li><a href="#">Dinner</a></li>
-					<li><a href="reserve_now.html">Reserve</a></li>
-				</ul>
-			</nav>
-			<nav class="dekstop-menu">
-				<ul class= "main_nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li class="navitem"><a href="#">About Us</a></li>
-					<li><a href="lunch-menu.html">Lunch</a></li>
-					<li><a href="#">Dinner</a></li>
-					<li><a href="reserve_now.html">Reserve</a></li>
-				</ul> 
+				<!-- This is your menu button -->
+				<!-- It's loaded in the HTML after the menu -->
+				<nav class="mobile-menu-btn">
+					<ul class= "mobile-main-nav mobile-main-off">
+						<li class="#"><a href="#">Home</a></li>
+						<li class="#"><a href="#">About Us</a></li>
+						<li><a href="lunch-menu.html">Lunch</a></li>
+						<li><a href="#">Dinner</a></li>
+						<li><a href="reserve_now.html">Reserve</a></li>
+					</ul>
+				</nav>
+				<nav class="dekstop-menu">
+					<ul class= "main_nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li class="navitem"><a href="#">About Us</a></li>
+						<li><a href="lunch-menu.html">Lunch</a></li>
+						<li><a href="#">Dinner</a></li>
+						<li><a href="reserve_now.html">Reserve</a></li>
+					</ul> 
 				</nav>
 
 			</div>
+
+			<body>
 
 
 			<!-- header, h1, logo etc content -->
@@ -51,49 +54,32 @@
 				</div>
 			</div>
 
-			<div class="hero">
-				<h1 class="home-head">Apizza Scholls</h1>
 
-				<br>
-
-				<div class="home-button">
-					<a href="reserve_now.html" class="btn btn-one">Rerserve Now</a>
-					<a href="#" class="btn btn-two">Deliver From Caviar</a>
-				</div>
-
-			</div>
-			<!-- This is your menu -->
 			
-		</header>
-
-		<!-- link for jquery -->
-		<script
-		src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous"></script>
-		<!-- link for your script file -->
-		<script type="text/javascript">
-			function toggleClass(targetElement, addedClass) {
-  if (targetElement.classList.contains(addedClass)) {
-    targetElement.classList.remove(addedClass);
-  }
-  else {
-    targetElement.classList.add(addedClass);
-  }
-};
-
-
-			// This is the function we add to our menu button to enable its click functionality
-document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
   
-  // This toggleClass is for added 'menu--open' to our menu HTML element. This will open the menu.
-  toggleClass(document.querySelector('.mobile-menu'), 'mobile-menu--open');
-  toggleClass(document.querySelector('.mobile-main-off'), 'mobile-main--open');
-  
-  // This toggleClass is for adding '.menu-btn--on' to our menu button HTML element. This creates the animation of the hamburger/hotdog icon to the close icon.
-  toggleClass(document.querySelector('.mobile-menu-btn'), 'mobile-menu-btn--on');
-});
-		</script>
-		<script src="scripts/script.js"></script>
-	</body>
-	</html>
+    		<h1 class="home-title">Apizza Scholls</h1>
+
+			<br>
+
+			<div class="home-button">
+				<a href="reserve_now.html" class="btn btn-one">Rerserve Now</a>
+				<a href="#" class="btn btn-two">Deliver From Caviar</a>
+			</div>
+		<!-- This is your menu -->
+
+	</header>
+
+	<!-- link for jquery -->
+
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<!-- link for your script file -->
+	<script src="scripts/script.js"></script> 
+
+
+	<script type="text/javascript" src="scripts/css3-animated.js"></script>
+
+</body>
+</html>

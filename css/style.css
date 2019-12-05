@@ -47,6 +47,9 @@ body{
 	font-family: 'Alata', sans-serif;
 
 }
+h1 {
+	color: white;
+}
 
 .row{
 	max-width: 1200px;
@@ -54,8 +57,8 @@ body{
 }
 
 .hero{
-	width: 1200px;
 	margin: 100px, auto;
+	margin-top: 200px, auto;
 }
 
 h1 {
@@ -65,21 +68,27 @@ h1 {
 	text-align: center;
 	margin-top: 120px;
 
+
 }
 
 .home-button {
+	display: grid;
+	grid-template-rows: repeat(1fr, 1fr);
+	padding: 20px;;
+	text-align: center;
 	font-family: 'Arvo', serif; 
-	margin-top: 30px;
-	margin-left:440px;
+	
 }
 
 .btn{
 	border: 1px solid white;
 	padding: 10px 30px;
 	color: white;
+	margin: 20px;
 	text-decoration: none;
-	margin-right: 5px;
-	font-size:13px;
+	margin-right: 200px;
+	margin-left: 120px;
+	font-size:20px;
 	text-transform: uppercase;
 }
 
@@ -665,6 +674,7 @@ body {
 }
 
 p{
+	display: flex;
 	margin-top: 0;
 	font-size: 14px;
 	font-family: 'Arvo', serif; 
@@ -740,6 +750,7 @@ img {
 	}
 	img{
 		width: 100%;
+		height: 100vh;
 
 	}
 
@@ -758,10 +769,11 @@ img {
 
 .menu-option {
 	padding: 10px 20px;
+	display: inline-block;
 }
 
 .menu-option h2 {
-	grid-column: 1 / 1;
+	grid-column: 3/ 1;
 	text-align: center;
 }
 
@@ -953,121 +965,15 @@ img {
 
 /*--------------------------------------*/
 
-
-@media (min-width: 1024px) {
 	.menu-featured.is-sticky .menu-option-content {
 		position: fixed;
 		bottom: 0;
 		right: 0;
 		width: 100%;
 		max-width: 583px;
-	}}
-
-html {
-    box-sizing: border-box;
-}
-* {
-    box-sizing: inherit;
-}
-
-
-}
-p {
-  margin: 2rem;
-  margin-left: 4rem;
-}
-/* slide-out menu */
-div#slider {
-    position: absolute;
-    top: 0;
-    left: -420px;
-    z-index: 3;
-    width: 420px;
-    height: 100vh;
-    padding: 2rem 3rem;
-    background: #f4efd2;
-    border-right: 1px solid #b5ae8b;
-}
-/* tab shape */
-#menu-button {
-    position: relative;
-    top: 100px;
-    left: 343px;
-    width: 100px;
-    height: 46px;
-    font-weight: normal;
-    font-size: .9rem;
-    padding: .7rem;
-    background: #f4efd2;
-    border: 2px solid #b5ae8b;
-    border-bottom: 2px solid #f4efd2;
-    border-radius: 20px 20px 0 0;
-    letter-spacing: .15em;
-    text-align: center;
-    transform: rotate(90deg);
-    z-index: 4;
-    overflow: hidden;
-}
-#menu-button:hover {
-  cursor: pointer;
-}
-/* next 4 rules make the sliding happen - with JavaScript assist */
-.slide-to-view {
-    animation-timing-function: ease-out;
-    animation-duration: .5s;
-    animation-name: slidein;
-}
-@keyframes slidein {
-    from { left: -420px; }
-    to { left: 0; }
-}
-.slide-out-of-view {
-    animation-timing-function: ease-in;
-    animation-duration: .5s;
-    animation-name: slideout;
-}
-@keyframes slideout {
-    from { left: 0; }
-    to { left: -420px; }
-}
-/* media queries */
-@media screen and (max-width: 450px) {
-    body {
-      margin-top: 4rem;
-    }
-    p {
-      margin-left: 2rem;
-    }
-    div#slider {
-        top: -100vh;
-        left: 0;
-        width: 100%;
-        padding: 2rem;
-        border-bottom: 1px solid #b5ae8b;
-    }
-    #menu-button {
-        top: calc(100vh - 32px);
-        left: 200px;
-        border: 2px solid #b5ae8b;
-        border-top: 2px solid #f4efd2;
-        border-radius: 0 0 20px 20px;
-        transform: rotate(0deg);
-    }
-    /* menu now comes down from top*/
-    @keyframes slidein {
-        from { top: -100vh; }
-        to { top: 0; }
-    }
-    @keyframes slideout {
-        from { top: 0; }
-        to { top: -100vh; }
-    }
-}
+	}
 
 /*-------------------------------------------------------------*/
-
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -1186,8 +1092,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Muli';
-	position: relative;
 	height: 169px;	
 	width: 370px;
 	max-width: calc(100% - 10px);
@@ -1494,14 +1398,7 @@ a {
   transition: .2s ease-in-out;
 }
 
-h1, h2, h3, h4 {
-  margin: .3em 0;
-}
 
-ul {
-  padding: 0;
-  list-style: none;
-}
 
 img {
   vertical-align: middle;
