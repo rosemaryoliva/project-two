@@ -13,16 +13,6 @@ function toggleClass(targetElement, addedClass) {
   }
 };
 
-// This is the function we add to our menu button to enable its click functionality
-document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-  
-  // This toggleClass is for added 'menu--open' to our menu HTML element. This will open the menu.
-  toggleClass(document.querySelector('.mobile-menu'), 'mobile-menu--open');
-  
-  // This toggleClass is for adding '.menu-btn--on' to our menu button HTML element. This creates the animation of the hamburger/hotdog icon to the close icon.
-  toggleClass(document.querySelector('.mobile-menu-btn'), 'mobile-menu-btn--on');
-  toggleClass(document.querySelector('.mobile-main-nav'), 'mobile-main-off');
-});
 
 
  $('.activate').on('click touch', function(e) {
@@ -37,3 +27,27 @@ document.querySelector('.mobile-menu-btn').addEventListener('click', function() 
          }, 3200);
      }
  });
+(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+

@@ -9,19 +9,60 @@
 	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/animations.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
 </head>
-
+<body>
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!">Apizza Scholls</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="menu.html">Menu</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Lunch</a>
+            </li>
+            <li>
+              <a href="#!">Dinner</a>
+            </li>
+            <li>
+              <a href="#!">Drinksn</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="reserve_now.html">Reserve</a>
+        </li>
+        <li>
+          <a href="faqs.html">FAQ's</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
   
+
+
 
 <section class="menu_list mt-60 mb-60">
      <div class="our-menu-list">
         <div class="row">
            <div class="col-xl-12">
-
-    <h1 class= "menu-title">Our Menu</h1>
+    
               </div>
            </div>
         <div class="row">
@@ -41,6 +82,10 @@
               </li>
            </ul>
          </div>
+         <div class="animatedParent" data-sequence="500">      
+
+    <h1 class="animated bounceInUp" data-id="1" class= "menu-title">Our Menu</h1>
+</div>
         </div>
   
 
@@ -50,157 +95,392 @@
               <div class="tab-pane fade active show" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
                  <div class="row">
                     <div class="col-md-6">
+                       <h1 class="food-catagory">Dinner</h1>
+                       <p class="food-items"> House Pies</p>
                        <div class="single_menu_list">
-                        <h1 class="food-catagory">Dinner</h1>
-                          <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-5.jpg" alt="">
+                          <img src="images/pizza_2.png" alt="">
                           <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                             <h4>Plain Pie <span>$20</span></h4>
+                             <p>Tomato sauce, mozzarella (whole milk & fresh), grana padano & extra virgin olive oil</p>
                           </div>
                        </div>
                        <div class="single_menu_list">
                           <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                             <h4>Amatriciana  <span>$25</span></h4>
+                             <p>Whole milk mozzarella, grana padano, lite sauce/chili flake/herbs/garlic, House cured Bacon & red onions.</p>
                           </div>
                        </div>
                        <div class="single_menu_list">
                           <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                             <h4>Apizza Margherita  <span>$22</span></h4>
+                             <p>Our spin on the classic Margherita
+Tomato sauce, mozzarella (whole milk & fresh), grana padano, fresh garlic, extra virgin olive oil & fresh basil after bake.
+Add Scalia anchovies for $2.00 more & make it a Coastal.</p>
+                          </div>
+                       </div>
+                       <div class="single_menu_list">
+                          <div class="menu_content">
+                             <h4>Apizza Amore <span>$26</span></h4>
+                             <p>Margherita plus Capicola (cured pork shoulder)</p>
                           </div>
                        </div>
                     </div>
                     <div class="col-md-6">
                        <div class="single_menu_list">
                           <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                             <h4>Bacon Bianca  <span>$24</span></h4>
+                             <p>Whole milk mozzarella, grana padano, lots of fresh garlic, herbs, black pepper, EV olive oil & our house cured bacon. *NO Sauce*</p>
                           </div>
                        </div>
                        <div class="single_menu_list">
                           <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                             <h4>Diablo Blanco <span>$26</span></h4>
+                             <p>Plain Pie without the sauce, ricotta, roasted tomato pesto (Roasted tomatoes, toasted pumpkin seeds, cilantro, garlic, salt, pepper), herbs, black pepper, & fresh Jalapeño *NO Sauce*.</p>
                           </div>
                        </div>
                        <div class="single_menu_list">
                           <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                             <h4>Marinara (Vegan pie) <span>$18</span></h4>
+                             <p>Sauce, lite garlic, mixed herbs, chili flake, black pepper, EV olive oil, finished with sea salt & Arugula.
+                              *No Cheese *
+                            </p>
                           </div>
                        </div>
+                       <div class="single_menu_list">
+                          <div class="menu_content">
+                             <h4>Meatball & Onion <span>$26</span></h4>
+                             <p>Plain pie + our house meatballs & red onions.</p>
+                          </div>
+                       </div>
+                       <div class="single_menu_list">
+                          <div class="menu_content">
+                             <h4>New York White Pie<span>$26</span></h4>
+                             <p>Our house plain pie plus house cured, smoked Canadian bacon, red onions & pineapple
+**Make it a PB&J for the same price. (Canadian Bacon, Pineapple & Jalapeños)**</p>
+                          </div>
+                       </div>
+                       <div class="single_menu_list">
+                          <div class="menu_content">
+                             <h4>Salami & Green Olive<span>$26</span></h4>
+                             <p>Whole milk mozzarella, lite tomato sauce, grana padano, EV olive oil, Olympia Provisions Cotto Salami & cracked green olives.
+                            </p>
+                          </div>
+                       </div>
+                       <div class="single_menu_list">
+                          <div class="menu_content">
+                             <h4>Sausage & Mama<span>$26</span></h4>
+                             <p>Plain pie plus House made sausage & Mama Lil’s Kick Butt goat horn peppers (Spicyish)
+                            </p>
+                          </div>
+                       </div>
+                       <div class="single_menu_list">
+                          <div class="menu_content">
+                             <h4>Surf & Turf<span>$26</span></h4>
+                             <p>Plain pie + House made Sausage & Anchovies.
+                            </p>
+                          </div>
+                        </div>
+
+                          <div class="single_menu_list">
+                          <div class="menu_content">
+                             <h4>Tartufo2 The Electric Boogaloo<span>$26</span></h4>
+                             <p>Mozzarella (whole milk & fresh), Ricotta, mushrooms, grana padano, with Truffle Oil and sea salt. *No Sauce*
+                            </p>
+                          </div>
+                        </div>
                     </div>
                  </div>
               </div>
 
-              <h1 class="food-catagory">Lunch</h1>
+              
+                    <div class="col-md-6">
+                       <div class="single_menu_list">
+                    
+                          <div class="menu_content">
+                             <h4>Build your own Pie (BYO) - 18" pizza <span></span></h4>
+                             <p>*No more than three (3) ingredients per pie, including no more than two (2) meats per pie * (anchovies, garlic, basil & arugula do not count towards the limit)
+All pies are 18 inches </p>
+<br>
+<p>Plain Pie + $ per ingredient/sides</p>
+<p>$4 - Meats & others - Olympia Provisions Capicola, Mama Lil’s Hot Peppers, Truffle Oil, Pepperoni, House cured Canadian bacon, House made Meatballs, House made Sausage, OP Cotto Salami, Anchovies
+** our house Bacon is not offered for BYO toppings **</p>
+<br>
+<p><strong>$3 - Veggies & others</strong></p>
+<p>Arugula, Fresh Garlic ($1),
+Fresh Basil ($2), Fresh Mozzarella (Fior di Latte), Greek Black Olives*, Green Olives*, Niçoise Olives, Jalapeño, Mushrooms, Pepperoncini, Pineapple, Red Onion, Ricotta, Tomato sauce, & Whole milk Mozzarella
+*Olives may contain pits or partial pieces*
+</p>
+              </div>
+           </div>
+        </div>
+      </div>
+     </div>
+
+
+              
+                 <div class="row">
+                    <div class="col-md-6">
+                       <p class="food-items"> Salads</p>
+                       <div class="single_menu_list">
+                          <img src="images/house-salad.png" alt="">
+                          <div class="menu_content">
+                             <h4>Caesar Salad <span>$11</span></h4>
+                             <p>Whole leaf romaine, parmigiano-reggiano, house made croutons, tossed in our house Caesar dressing *
+*(made daily with raw, un-pasteurized eggs)*</p>
+                          </div>
+                       </div>
+                       <div class="single_menu_list">
+                          <div class="menu_content">
+                             <h4>House Salad <span>$9</span></h4>
+                             <p>Mixed greens, mushrooms, red onion, black olives, carrots, sliced radish & grana padano tossed in our red wine vinaigrette.</p>
+                          </div>
+                       </div>
+                     </div>
+                   </div>
+              
+
+      
+                 <div class="row">
+                    <div class="col-md-6">
+                       <p class="food-items"> Antipasti</p>
+                       <div class="single_menu_list">
+                          <img src="images/antipasti.jpg" alt="">
+                          <div class="menu_content">
+                             <h4>Bowl of Olives <span>$5</span></h4>
+                             <p>Niçoise, Saracena and Herbed Sicilian</p>
+                          </div>
+                       </div>
+                       <div class="single_menu_list">
+                          <div class="menu_content">
+                             <h4>Veggie plate <span>$13</span></h4>
+                             <p>Roasted red peppers, mixed Italian olives, Italian semi dried tomatoes, sweet cherry peppers, Fior di Latte and grilled artichoke whole heart.</p>
+                          </div>
+                       </div>
+                       <div class="single_menu_list">
+                          <div class="menu_content">
+                             <h4>House Antipasti plate  <span>$14</span></h4>
+                             <p>Creminelli Finnochiona, Calabrese & Olympic Provisions Cotto Salami, Capicola & Chorizo with D.O.P. aged Provolone.</p>
+                          </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+              
               <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
+                <h1 class="food-catagory">Lunch</h1>
+              <p class="food-items">Saturdays & Sundays 11:30am – 2:30pm</p>
+                 <div class="row">
+                    <div class="col-md-6">
+                       <div class="tab-content col-xl-12" id="myTabContent">
+              <div class="tab-pane fade active show" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
                  <div class="row">
                     <div class="col-md-6">
                        <div class="single_menu_list">
-                          <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
+                          <img src="images/lunch.png" alt="">
                           <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                             <h4>B.Y.O. Toppings <span>*depends on toping*</span></h4>
+                             <p>$1.5/$3 Veggies & others - $2/$4 Meats</p>
+                             <br>
+                             <p>OP Cotto salami, OP Capicola, pepperoni, house Canadian bacon, house sausage, house meatballs, anchovies, arugula, *fresh basil ($1/$2), *fresh garlic (no charge), black olives, green olives, Niçoise olives, jalapeño, mushrooms, pepperoncini, pineapple, red onion, ricotta, Mama Lil’s ($2/$4),
+whole milk mozzarella, fresh mozzarella, truffle oil ($2/$4)
+*House Bacon not available for lunch*</p>
+<br>
+<p>
+We do not half & half personal pies, & 3 toppings maximum (fresh basil, arugula, garlic & anchovies & any after bake items do not count towards maximum) with 2 meat limit.
+</p>
                           </div>
                        </div>
                        <div class="single_menu_list">
-                          <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
                           <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                             <h4>12” or 18” Pizzas – all pies start with the Plain Pie, unless noted</h4>
+                             <p>Plain Pie – Tomato sauce, mozzarella (whole milk & fresh), grana padano & extra-virgin olive oil.
+                              <br>
+                              <br>
+Apizza Margherita - Fresh garlic & basil after bake
+<br>
+<br>
+Marinara - No cheese, sauce, olive oil & herbs. Finished with sea salt, & arugula.
+<br>
+<br>
+Amore - Margherita + Olympic Provisions Capicola
+<br>
+<br>
+Meatball & Onion - House made meatballs & red onion.
+<br>
+<br>
+P. B.& J. – Pineapple, house Canadian Bacon & Jalapeño
+<br>
+<br>
+Pepperoni - Small stick Pepperoni
+<br>
+<br>
+Sausage & Mama - House sausage & Mama Lil’s goat horn peppers.
+<br>
+<br>
+Tartufo pt. 2, the Electric Boogaloo - Ricotta, mushrooms, black pepper & truffle oil. *A White Pie*
+<br>
+<br>
+Diablo Blanco - Ricotta, semi-dried tomato pesto, herbs, black pepper & jalapeño *A White Pie*</p>
                           </div>
                        </div>
-                       <div class="single_menu_list">
-                          <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
-                          <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                          </div>
-                       </div>
-                    </div>
+
+                       <div class="tab-content col-xl-12" id="myTabContent">
+              <div class="tab-pane fade active show" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+                 <div class="row">
                     <div class="col-md-6">
+                       <p class="food-items"> Salads</p>
                        <div class="single_menu_list">
-                          <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-5.jpg" alt="">
+                          <img src="images/house-salad.png" alt="">
                           <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                             <h4>Caesar Salad <span>$11</span></h4>
+                             <p>Whole leaf romaine, parmigiano-reggiano, house made croutons, tossed in our house Caesar dressing *
+*(made daily with raw, un-pasteurized eggs)*</p>
                           </div>
                        </div>
                        <div class="single_menu_list">
-                          <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
                           <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                             <h4>House Salad <span>$9</span></h4>
+                             <p>Mixed greens, mushrooms, red onion, black olives, carrots, sliced radish & grana padano tossed in our red wine vinaigrette.</p>
                           </div>
                        </div>
-                       <div class="single_menu_list">
-                          <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
-                          <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                          </div>
-                       </div>
-                    </div>
+
+                     </div>
+                   </div>
                  </div>
-              </div>
 
-
-              <h1 class="food-catagory">Drinks</h1>
+              <div class="tab-pane fade " id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
+                 <div class="row">
+                  <h1 class="food-catagory">Drinks</h1>
               <div class="tab-pane fade " id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
                  <div class="row">
                     <div class="col-md-6">
                        <div class="single_menu_list">
-                          <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-1.jpg" alt="">
+                          <img src="images/draft-beer.jpg" alt="">
                           <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                          </div>
-                       </div>
-                       <div class="single_menu_list">
-                          <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
-                          <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                          </div>
-                       </div>
-                       <div class="single_menu_list">
-                          <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-1.jpg" alt="">
-                          <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                          </div>
-                       </div>
-                    </div>
-                    <div class="col-md-6">
-                       <div class="single_menu_list">
-                          <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
-                          <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                          </div>
-                       </div>
-                       <div class="single_menu_list">
-                          <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
-                          <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                          </div>
-                       </div>
-                       <div class="single_menu_list">
-                          <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
-                          <div class="menu_content">
-                             <h4>Chicken Fried Salad  <span>$45</span></h4>
-                             <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
+                             <h4>Draft Beer <span>$6/$22 </span></h4>
+                             <li class="drink-list">Upright - Supercool IPA (OR)</li>
+                             <li class="drink-list">Breakside - Apizza ALT (OR)</li>
+                             <li class="drink-list">Breakside Wanderlust IPA (OR)</li>
+                             <li class="drink-list">Rosenstadt Dunkel (OR)</li>
+                             <li class="drink-list">Radeberger Pilsner (GER)</li>
+                             <li class="drink-list">Everybody's Brewing - Sprinkles Hibiscus Sour Red Ale (WA)</li>
+                             <li class="drink-list">Finn River Rotating Cider $8/$29(WA)</li>
+                             <li class="drink-list">Tripel Karmeliet Belgian (BEL) - $8 - 10 oz glass</li>
+                             
               </div>
            </div>
         </div>
+      </div>
+     </div>
+
+  
+      
+                 <div class="row">
+                    <div class="col-md-6">
+                       <div class="single_menu_list">
+                          <img src="images/canned-beer.jpg" alt="">
+                          <div class="menu_content">
+                             <h4>Canned Beer <span>$6/$22 </span></h4>
+                             <li class="drink-list">54-40' Kolsch</li>
+                             <li class="drink-list">Buoy Cream</li>
+                             <li class="drink-list">Portland Cider Co - Apple</li>
+                             <li class="drink-list">Sunriver Fuzztail Hefe</li>
+                             <li class="drink-list">Guinness Irish Stout (6)</li>
+                             <li class="drink-list">Old Town Hazy IPA (6)</li>
+                             <li class="drink-list">Old Speckled Hen (5)</li>
+                             <li class="drink-list">Old German (3)</li>
+                             <li class="drink-list">Stiegl Radler (6)</li>
+              </div>
+           </div>
+        </div>
+      </div>
+     </div>
+
+     <h1 class="food-catagory">Drinks</h1>
+              <div class="tab-pane fade " id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
+                 <div class="row">
+                    <div class="col-md-6">
+                       <div class="single_menu_list">
+                          <img src="images/bottle-beer.jpg" alt="">
+                          <div class="menu_content">
+                             <h4>Bottled Beer <span>$6/$22 </span></h4>
+                             <li class="drink-list">Duchesse Belgian Sour (8)</li>
+                             <li class="drink-list">Clausthaler N.A. (4.5)</li>
+                             <li class="drink-list">Hitchino White Ale (7.5)</li>
+                             <li class="drink-list">North Coast Imp. Stout (6.5)h</li>
+                             <li class="drink-list">Ancestry Irish Red (7)</li>
+                             <li class="drink-list">Aspall Blush Cider (7)</li>
+                             <li class="drink-list">pFriem IPA (7)</li>
+                             <li class="drink-list">Schneiderweiss Edel Weiss (7)</li>
+                             <li class="drink-list">Samuel Smith Oatmeal Stout (8)</li>
+                             <li class="drink-list">Samuel Smith Taddy Porter (8)</li>
+                             <li class="drink-list">Samuel Smith Taddy Porter (8)</li>
+                             <li class="drink-list">Breakside Salted Caramel Stout (9)</li>
+                             
+              </div>
+           </div>
+            <div class="single_menu_list">
+              <img src="images/red-wine.jpg" alt="">
+                          <div class="menu_content">
+                             <h4>Red Wine</h4>
+                             <li class="drink-list">House Red (Sangiovese blend) (Italy) 7/28</li>
+                             <li class="drink-list">Barbera D’Alba – Reverdito (Italy) 9/36</li>
+                             <li class="drink-list">Montepulciano - Vignafranca (Italy) 10/40</li>
+                             <li class="drink-list">Chianti – Colli Senesi (Italy) 9/36</li>
+                             <li class="drink-list">Langhe Rosso - G.D. Vajra - (Italy) 10/40</li>
+                             
+              </div>
+           </div>
+
+           <div class="single_menu_list">
+              <img src="images/white-wine.jpg" alt="">
+                          <div class="menu_content">
+                             <h4>White Wine</h4>
+                             <li class="drink-list">House White - (Italy) 7/28</li>
+                             <li class="drink-list">Pinot Grigio - Rapido (Italy) 8/32</li>
+                             
+              </div>
+           </div>
+
+           <div class="single_menu_list">
+              <img src="images/champage.jpg" alt="">
+                          <div class="menu_content">
+                             <h4>Bubbles & Rose</h4>
+                             <li class="drink-list">Rosato - Rosa del Golfo (Italy) 9/36</li>
+                             <li class="drink-list">Fiore Rose - Clara C - Italy 10/40</li>
+                             
+              </div>
+           </div>
+
+           <div class="single_menu_list">
+            <img src="images/bottle-wine.jpg" alt="">
+                          <div class="menu_content">
+                             <h4>Bottle Only</h4>
+                             <p>Valpolicella Ripasso Superiore - Lonardi – 2012 (Italy) 45 Chianti Classico Riserva – Castello Della Paneretta – 2012 (Italy) 42 Barbaresco - Cantina del Pino - 2011 (Italy) 48 Barolo “Castagni”- Reverdito – 2011 (Italy) 50 Pinot Noir “Anne Amie Vineyards – 2011 (OR) 39
+                              <br>
+                              <br>
+
+
+* $15.00 corkage fee per 750 ML bottle not on our menu. *</p>
+                          </div>
+                       </div>
+
+        </div>
+      </div>
      </div>
   </section>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <!-- link for your script file -->
+  <script src="scripts/script.js"></script> 
+  
+
+  <script type="text/javascript" src="scripts/css3-animated.js"></script>
+</body>
 
 </html>

@@ -18,30 +18,7 @@
 }
 
 
-.main_nav {
-	float:right;
-	list-style: none;
-	margin-top: 30px;
-}
-.main_nav li {
-	display: inline-block;
-}
 
-.main_nav li a {
-	color: white;
-	text-decoration: none;
-	padding: 5px 20px;
-	font-family: 'Alata', sans-serif;
-	font-size: 15px;
-}
-
-.logo img{
-	display: block;
-	width: 150px;
-	height: auto;
-	float: left;
-	padding: 20px;
-}
 
 body{
 	font-family: 'Alata', sans-serif;
@@ -72,6 +49,11 @@ h1 {
 
 }
 
+.home-title{
+	font-family: 'Leckerli One', cursive;
+	text-transform: none;
+}
+
 .home-button {
 	display: grid;
 	grid-template-rows: repeat(1fr, 1fr);
@@ -82,7 +64,7 @@ h1 {
 }
 
 .btn{
-	border: 1px solid white;
+	border: solid white 1px;
 	padding: 10px 30px;
 	color: white;
 	margin: 20px;
@@ -101,103 +83,172 @@ h1 {
 	background-color: darkorange;
 }
 /*------------------------------------------------------------------*/
-/* This just resets the styles of our unordered list that makes our hamburger/hotdog icon */
-@media (min-width: 480px) {
-/* This just resets the styles of our unordered list that makes our hamburger/hotdog icon */
-
 .navigation {
-	display: none;
-}
-.logo{
-	display: none;
-}
-.mobile-main-nav ul{
-  float: right;
-  list-style: none;
-  padding: 0;
+	 height: 120px;
+	 background: darkorange;
 
 }
-
-/* Styles for the menu button */
-.mobile-menu-btn {
-  background-color: #FFB018;
-  position: absolute;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .16);
-  cursor: pointer;
-  height: 56px;
-  left: 24px;
-  position: fixed;
-  top: 24px;
-  width: 56px;
+ .brand {
+	 position: absolute;
+	 font-family: 'Leckerli One', cursive;
+	 padding: 10px;
+	 padding-right: 30px;
+	 float: left;
+	 line-height: 70px;
+	 font-size: 40px;
 }
-
-/* Styles for the menu */
-.mobile-menu {
-  bottom: 0;
-  color: white;
-  left: 0;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  width: 288px;  
-  transform: translate3d(-100%, 0, 0);
-  transition: transform .2s linear;
+ .brand a, .brand a:visited {
+	 color: #fff;
+	 text-decoration: none;
+	 font-family: 'Leckerli One', cursive;
 }
-.mobile-main-off {
-	display: none;
-}
-.mobile-main--open {
-	display: block;
-	position: fixed;
-	background: white;
-	height: cover;
-	-webkit-box-shadow: 7px 10px 5px -1px rgba(0,0,0,0.4);
--moz-box-shadow: 7px 10px 5px -1px rgba(0,0,0,0.4);
-box-shadow: 7px 10px 5px -1px rgba(0,0,0,0.4);
-}
-
-/* Creating the hamburger/hotdog icon in CSS */
-.mobile-menu-btn a{
-  text-decoration: none;
-  transition: all .3s ease-in-out;
-  font-family: 'Alata', sans-serif;
-  margin: auto;
-  color: darkorange;
-}
-
-nav.mobile-menu-btn a:hover {
-  background: #FFB018;
-  color: #ffff;
-  padding: 10px;
-}
-/* The following two lines set the three lines of our hamburger/hotdog icon apart */
-.mobile-menu-btn li:first-child {
-  transform: translate3d(0, -4px, 0);
-  margin-top: 100px;
+ .nav-container {
+	 max-width: 1000px;
+	 margin: 0 auto;
 
 }
+ nav {
+	 float: right;
+	
 
-.mobile-menu-btn li:last-child {
-  transform: translate3d(0, 4px, 0);
+}
+ nav ul {
+	 list-style: none;
+	 margin: 0;
+	 padding: 0;
+}
+ nav ul li {
+	 float: left;
+	 position: relative;
+}
+ nav ul li a, nav ul li a:visited {
+	 display: block;
+	 padding: 0px 20px;
+	 line-height: 70px;
+	 color: white;
+	 text-decoration: none;
+}
+ nav ul li a:hover, nav ul li a:visited:hover {
+	 background: #FFC844;
+	 color: #fff;
+}
+ nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
+	 padding-left: 4px;
+	 content: ' ▾';
+	 
+}
+ nav ul li ul li {
+	 min-width: 190px;
+}
+ nav ul li ul li a {
+	 padding: 15px;
+	 line-height: 20px;
+}
+ .nav-dropdown {
+	 position: absolute;
+	  background: darkorange;
+	 display: none;
+	 z-index: 1;
+	 box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+/* Mobile navigation */
+ .nav-mobile {
+	 display: none;
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 height: 70px;
+	 width: 70px;
+}
+ @media only screen and (max-width: 798px) {
+	 .nav-mobile {
+		 display: block;
+		 position: fixed;
+
+
+	}
+	 nav {
+		 width: 100%;
+		 padding: 70px 0 15px;
+	}
+	 nav ul {
+		 display: none;
+		 position: fixed;
+		 background: darkorange;
+
+
+	}
+	 nav ul li {
+		 float: none;
+	}
+	 nav ul li a {
+		 padding: 15px;
+		 line-height: 20px;
+	}
+	 nav ul li ul li a {
+		 padding-left: 30px;
+	}
+	 .nav-dropdown {
+		 position: static;
+
+	}
+}
+ @media screen and (min-width: 799px) {
+	 .nav-list {
+		 display: block !important;
+
+	}
+}
+ #nav-toggle {
+	 position: absolute;
+	 left: 18px;
+	 top: 22px;
+	 cursor: pointer;
+	 padding: 10px 35px 16px 0px;
+}
+ #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	 cursor: pointer;
+	 border-radius: 1px;
+	 height: 5px;
+	 width: 35px;
+	 background: #FFC844;
+	 position: absolute;
+	 display: block;
+	 content: '';
+	 transition: all 300ms ease-in-out;
+}
+ #nav-toggle span:before {
+	 top: -10px;
+}
+ #nav-toggle span:after {
+	 bottom: -10px;
+}
+ #nav-toggle.active span {
+	 background-color: transparent;
+}
+ #nav-toggle.active span:before, #nav-toggle.active span:after {
+	 top: 0;
+}
+ #nav-toggle.active span:before {
+	 transform: rotate(45deg);
+}
+ #nav-toggle.active span:after {
+	 transform: rotate(-45deg);
 }
 
-/* We're now in the animation territory. These are the classes you toggle on with our Javascript function. */
 
-
-.mobile-menu--open {
-  transform: translate3d(0, 0, 0);
-  display: block;
-  background-color: white;
-}}
 
 /*---------------------------------------------------------------------*/
 /* Enter your Styles below! */
 
 .dining-room {
-	background-image: url(../images/dining_room.png); 
-	height: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/dining_room.png); 
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-color: black;
 }
+
 
 
 * {box-sizing: border-box;}
@@ -254,7 +305,17 @@ body.header-fixed header {
 }
 /*-------------------------------------------------------------*/
 
+p{
+	font-family: 'Arvo', serif;
+	margin: 20px; 
 
+}
+
+.food-items{
+	font-size: 20px;
+	text-align: center;
+	color: darkorange;
+}
 
 li {
   list-style: none;
@@ -350,11 +411,20 @@ form {
 
 }
 
+.reserve-header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/pizza-on-table.jpg); 
+	height: 40vh;
+	background-size: cover;
+	background-position: center;
+	background-color: black;
+}
+
 .reserve{
 	margin: 0 0 30px 0;
 	text-align: center;
-	color: black;
+	color: gray;
 }
+
 
 input[type="text"],
 input[type="email"],
@@ -568,7 +638,7 @@ label .light {
 	 --rotateX: 0deg;
 	 padding: 0;
 	 margin-left: 40px;
-	 margin-top: -30px;
+	 margin-top: -40px;
 	 backface-visibility: hidden;
 	 display: block;
 	 width: 100%;
@@ -629,6 +699,7 @@ body {
 .mb-60 {
     margin-bottom: 60px;
 
+
 }
 
 .section-title p {
@@ -677,7 +748,8 @@ body {
 }
 
 .menu-title{
-	padding-top: 200px;
+	text-align: center;
+	margin-left: 100px;
 }
 .nav-item a {
     color: white;
@@ -686,10 +758,10 @@ body {
 }
 .our-menu-list{
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/storefront.jpg"); 
-	height: 60vh;
+	height: 50vh;
 	background-size: cover;
 	background-position: center;
-	margin-top:-150px;
+	
 }
 .nav-item a:hover {
     color: darkorange;
@@ -698,7 +770,9 @@ body {
 }
 
 .single_menu_list {
-    display: inline-block;
+    display:flex;
+    flex-wrap:wrap;
+    grid-column: 1fr,2fr;
     position: relative;
     margin-right: 40px;
     margin-left: 100px;
@@ -739,6 +813,22 @@ body {
 /*-------------------------------------------------------------*/
 
 /*-------------------------------------------------------------*/
+
+.faq-header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/bar.jpeg); 
+	height: 40vh;
+	color: white;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.faq-title{
+	color: white;
+	font-size: 30px;
+	padding: 20px;
+}
+
 
 * {
 	box-sizing: border-box;
@@ -829,6 +919,7 @@ body {
 .content p {
 	color: #333;
 	line-height: 1.5;
+
 }
 
 .content img {
@@ -904,7 +995,6 @@ body {
 .social-panel h4 {
 	margin: 20px 0;
 	color: #97A5CE;	
-	font-family: 'Muli';	
 	font-size: 14px;	
 	line-height: 18px;
 	text-transform: uppercase;
@@ -968,7 +1058,6 @@ body {
 	background-color: #001F61;
 	border-radius: 10px 10px 0 0;
 	color: #fff;
-	font-family: 'Muli';
 	padding: 7px 15px;
 	position: fixed;
 	bottom: 0;
@@ -995,6 +1084,10 @@ body {
 	
 }
 /*--------------------------------------------------------------------*/
+.drink-list{
+	display: inline-grid;
+}
+
 .faq-body {
   background: #f4f4f4;
 }
@@ -1035,8 +1128,7 @@ section.faq {
 }
 
 #faq h2 {
-  color: #cc071e;
-  font-family: 'hm_light', sans-serif;
+  color: darkorange;
   font-size: 20px;
   line-height: 34px;
   text-align: left;
@@ -1053,7 +1145,7 @@ section.faq {
 #faq p {
   color: #333;
   text-align: left;
-  font-family: 'hm_light', sans-serif;
+  font-family: 'Arvo', serif; 
   font-size: 14px;
   line-height: 1.45;
   position: relative;
@@ -1106,12 +1198,13 @@ section.faq {
 #faq ul li i:before, ul li i:after {
   content: "";
   position: absolute;
-  background-color: #cc071e;
+  background-color: darkorange;
   width: 3px;
   height: 9px;
 }
 #faq ul li i:before {
   transform: translate(-2px, 0) rotate(45deg);
+
 }
 #faq ul li i:after {
   transform: translate(2px, 0) rotate(-45deg);

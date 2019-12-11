@@ -2,57 +2,60 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Rerserve Now</title>
+	<title>Dinner Menu</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/animations.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
 </head>
-
-
-  <menu class="mobile-menu"></menu>
-
-      <!-- This is your menu button -->
-      <!-- It's loaded in the HTML after the menu -->
-      <nav class="mobile-menu-btn">
-        <ul class= "mobile-main-nav mobile-main-off">
-          <li class="#"><a href="#">Home</a></li>
-          <li class="#"><a href="#">About Us</a></li>
-          <li><a href="lunch-menu.html">Lunch</a></li>
-          <li><a href="#">Dinner</a></li>
-          <li><a href="reserve_now.html">Reserve</a></li>
-        </ul>
-      </nav>
-
-<header class="reserve-nav" id="topnav">
-
-  <div class="inner">
-    <div class="logo-nav">
-		<img class="logo" src="images/pizza_icon.png">
-	</div>
-    <nav class="dekstop-menu" role='navigation'>
-      <ul>
-        <li><a href="reserve_now.html">Reserve Now</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li class="drop-down"><a href="#">Menu</a>
-        <ul class="dropdown-content">
-        	<li><a href="lunch-menu.html">Lunch Menu</a></li>
-        	<li><a href="#">Dinner Menu</a></li>
-        	<li><a href="#">Drink Menu</a></li>
-        </li></ul>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Home</a></li>
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!">Apizza Scholls</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="menu.html">Menu</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Lunch</a>
+            </li>
+            <li>
+              <a href="#!">Dinner</a>
+            </li>
+            <li>
+              <a href="#!">Drinksn</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="reserve_now.html">Reserve</a>
+        </li>
+        <li>
+          <a href="faqs.html">FAQ's</a>
+        </li>
       </ul>
-    </nav>  
+    </nav>
   </div>
-</header>
+</section>
+
+ 
+
 
 <body class="dining-room"> 
 	
